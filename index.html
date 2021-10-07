@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="The Website about the Developer Rayan">
+    <meta name="author" content="Rayan">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="Itahriouan" /> <!-- website name -->
+	<meta property="og:site" content="https://itahriouan.dev/" /> <!-- website link -->
+	<meta property="og:title" content="Rayan"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="Die Webseite über Rayan Itahriouan" /> <!-- description shown in the actual shared post -->
+	<meta property="og:url" content="https://itahriouan.dev" /> <!-- where do you want your post to link to -->
+
+
+    <!-- Webpage Title -->
+    <title>Rayan Itahriouan</title>
+    
+    <!-- Links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+    <!-- Initialize Tooltips -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top" id="top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+                        
+            <a class="navbar-brand logo-text page-scroll" data-toggle="tooltip" data-placement="bottom" title=" Über mich" href="#about"><i class="fas fa-code"></i> Rayan</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bots</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" target="_blank" href="https://discord.com/oauth2/authorize?client_id=692456221952966738&scope=bot&permissions=2146958591&scope=bot%20applications.commands">Infinity Lounge <span class="badge badge-success">Online</span></a>
+                        </div>
+                    </li>
+                </ul>
+                    <!--GitHub-->
+                    <span class="fa-stack">
+                        <a href="https://github.com/RayanItah">
+                            <i class="fas fa-circle fa-stack-2x" data-toggle="tooltip" data-placement="bottom" title="GitHub"></i>
+                            <i class="fab fa-github fa-stack-1x" data-toggle="tooltip" data-placement="bottom" title="GitHub"></i>
+                        </a>
+                    </span>
+                    <!--Discord-->
+                    <span class="fa-stack">
+                        <a href="https://discord.gg/dUyBRSwRnC">
+                            <i class="fas fa-circle fa-stack-2x" data-toggle="tooltip" data-placement="bottom" title="Discord"></i>
+                            <i class="fab fa-discord fa-stack-1x" data-toggle="tooltip" data-placement="bottom" title="Discord"></i>
+                        </a>
+                    </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3 class="h1-large">Rayan Itahriouan
+                        </h3>
+                        <a class="btn-solid-lg page-scroll" href="#about">Wer bin ich?</a>
+                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Kontakt</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- About-->
+    <div id="about" class="basic-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <h2 aria-label="Hi! Ich bin ein Developer">Hi! Ich <span class="typewriter"></span></h2>
+                <p>Momentan bin ich <a id="age"></a> Jahre alt und lebe in Frankfurt am Main.Ich habe 2019 angefangen zu programmieren. Anfangs war es nur HTML und CSS und im späteren Verlauf kam (Node)-JavaScript, Bootstrap, PHP und andere Dinge hinzu. Anschließend habe ich Interesse im Backend entwickelt und Discord Bots programmiert. In der Werner-von-Siemens-Schule habe ich einen tieferen Einblick in den Bereichen TA2-Datenbanken, Objektorientierte Programmierung und Netzwerktechnik erhalten. Im einjaährigen Praktikum habe ich auch Einblicke bei die Annahme von Störungsmeldungen und Beratungsanfragen übernommen, eine Fehleranalyse und dessen Behebung durchgeführt. Bei der Installation verschiedenster Betriebssysteme habe ich einen guten Einblick in Konfigurationen der verschiedensten Betriebsystemen erhalten. </p>
+            </div> <!-- end of row -->                   
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of about -->
+
+    <!-- Details -->
+	<div class="split">
+		<div class="area-1">
+            <div></div>
+		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2 bg-gray">
+            <div class="container">    
+                <div class="row">
+                    <div class="col-lg-12">     
+                        <!-- Text Container -->
+                        <div class="text-container">
+                            <h5>🏆 Auszeichung</h5>
+                            <ul>
+                                <li>Discord Verified Bot Developer</li>
+                            </ul>
+                            <h5>🔨 SOFTWARE</h5>
+                            <ul>
+                                <li>Visual Studio Code</li>
+                                <li>Visual Studio</li>
+                                <li>Node.js</li>
+                                <li>HCL Notes</li>
+                                <li>MariaDB</li>
+                                <li>GitHub</li>
+                                <li>Discord</li>
+                                <li>Linux / Windows</li>
+                                <li>Cisco Acedemy</li>
+                            </ul>
+                            <h5>🤖 DEVELOPMENT SKILLS</h5>
+                            <p> HTML, CSS, JavaScript, Bootstrap, C# und Python</p>
+                            <div class="icons-container">
+                                <img src="images/details-icon-html.png" data-toggle="tooltip" data-placement="bottom" title="HTML5" alt="alternative">
+                                <img src="images/details-icon-css.png" data-toggle="tooltip" data-placement="bottom" title="CSS3" alt="alternative">
+                                <img src="images/details-icon-bootstrap.png" data-toggle="tooltip" data-placement="bottom" title="Bootstrap" alt="alternative">
+                                <img src="images/details-icon-javascript.png" data-toggle="tooltip" data-placement="bottom" title="JavaScript" alt="alternative">
+                                <img src="images/PngItem_5219587.png" data-toggle="tooltip" data-placement="bottom" title="C#" alt="alternative">
+                                <img src="images/pngaaa.com-619282.png" data-toggle="tooltip" data-placement="bottom" title="Python" alt="alternative">
+                            </div> <!-- end of icons-container -->
+                        </div> <!-- end of text-container -->
+                        <!-- end of text container -->
+
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+		</div> <!-- end of area-2 -->
+    </div> <!-- end of split -->
+    <!-- end of details -->
+
+    <!-- Projects -->
+    <div id="projects" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Meine Projekte</h2>
+                    <p class="p-heading">Dies sind die Projekte, an welche ich momentan arbeite oder gearbeitet habe.</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="fas fa-code"></i>
+                        <h4>Infinitiv-Umwandler <span class="badge badge-success">Abgeschlossen</span></h4>
+                        <p>Bei dieser Applikation handelt es sich um ein schulisches Projekt, welches die Funktion hat, eine Eingabe anhand des Rangeparameters in die Infinitivform umzuwandeln<a target="_blank" class="no-line" href="https://github.com/RayanItah/Infinitiv.git"> <br><br>Mein Projekt auf GitHub</a></p>
+                        <img src="images/PngItem_5219587.png" data-toggle="tooltip" data-placement="bottom" title="C#" alt="alternative" class="bildklasse">    
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="fas fa-code"></i>
+                        <h4>DOMAIN <span class="badge badge-success">Online</span></h4>
+                        <p>Das ist eine Seite die ich anhand von HTML5, CSS3 und JavaScript bearbeitet habe<a target="_blank" class="no-line" href="https://discord.com/oauth2/authorize?client_id=881217168023363584&permissions=19327428608&scope=bot%20applications.commands"><br><br><br>Mein Projekt auf GitHub</a></p>
+                        <img src="images/details-icon-html.png" data-toggle="tooltip" data-placement="bottom" title="HTML5" alt="alternative" class="bildklasse">
+                        <img src="images/details-icon-css.png" data-toggle="tooltip" data-placement="bottom" title="CSS3" alt="alternative" class="bildklasse">
+                        <img src="images/details-icon-javascript.png" data-toggle="tooltip" data-placement="bottom" title="JavaScript" alt="alternative" class="bildklasse">
+
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="fas fa-code"></i>
+                        <h4>Objektorientierte Programmierung [Schulisch] <span class="badge badge-danger">In Bearbeitung</span></h4>
+                        <p>Bei der objektorientierten Programmierung handelt es sich um den Aufbau einer Klasse und deren Eigenschaften, welche im Konstruktor definiert werden.<a target="_blank" class="no-line" href=""><br><br>Mein Projekt auf GitHub</a></p>
+                        <img src="images/PngItem_5219587.png" data-toggle="tooltip" data-placement="bottom" title="C#" alt="alternative" class="bildklasse">
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="fas fa-code"></i>
+                        <h4>Infinity Lounge <span class="badge badge-success">Online</span></h4>
+                        <p>Infinity Lounge ist ein Discord-Backend-Bot, welches dazu im Stande ist einen Chatt zu assisstieren und commands mit dem preffix "/" auszuführen<a target="_blank" class="no-line" href="https://discord.com/oauth2/authorize?client_id=692456221952966738&scope=bot&permissions=2146958591&scope=bot%20applications.commands"><br><br>Einladung zum Discord-Server</a></p>                    
+                        <a href="https://top.gg/bot/692456221952966738">
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of Projects -->
+    <!-- Testimonials -->
+<!--
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">A few words from people that chose to work with me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="testimonial-text">“Mark is a skilled developer which will do everything possible to deliver the project on time and I really appreciate that”</p>
+                            <div class="details">
+                                <img src="images/testimonial-1.jpg" alt="alternative">
+                                <div class="text">
+                                    <div class="testimonial-author">Samantha Bloom</div>
+                                    <div class="occupation">Team Leader - Syncnow</div>
+                                </div> 
+                            </div> 
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+-->
+    <!-- end of testimonials -->
+
+
+    <!-- Section Divider -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <hr class="section-divider">
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    <!-- end of section divider -->
+    <!-- Contact -->
+    <div id="contact" class="form-1 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Kontakt</h2>
+                    <p class="p-heading">Bei Fragen stehe ich für Sie gerne zur Verfügung: <a class="blue no-line" href="mailto:rayan.itahriouan@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Hier!">rayan.itahriouan@gmail.com</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->  
+    <!-- end of contact -->
+
+
+    <!-- Footer -->
+    <div class="footer bg-gray">
+        <div class="container">
+            <div class="col-lg-12">
+                <a class="upscroll btn-solid-lg page-scroll" href="#top"></a>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="social-container">
+                        <!--Instagram-->
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/rayan.itr/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <!--GitHub-->
+                        <span class="fa-stack">
+                            <a href="https://github.com/RayanItah">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <!--Discord-->
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © Rayan Itahriouan</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Distributed By <a class="no-line" href="https://themewagon.com/">Themewagon</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+        
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <!-- Load Date Oriented Data -->
+    <script>
+        const date = new Date();
+        const day = date.getDate()
+        const month = date.getMonth() + 1
+        const year = date.getFullYear();
+        const age = year - 2004
+        if(day < 29 && month <= 6) document.getElementById('age').textContent = age - 1
+        else document.getElementById('age').textContent = age
+    </script>
+</body>
+</html>
