@@ -59,8 +59,8 @@ Colors:
 
   /* Typewriter effect 1 */
   @keyframes typing {
-	0.0000%, 27.0000% { content: ""; }
-	1.0000%, 26.0000% { content: ""; }
+	0.0000%, 27.0000% { content: "e"; }
+	1.0000%, 26.0000% { content: "ei"; }
 	2.0000%, 25.0000% { content: "ein"; }
 	3.0000%, 23.0000% { content: "ein D"; }
 	4.0000%, 22.0000% { content: "ein De"; }
