@@ -735,8 +735,9 @@ input[type='checkbox'] {
 /*     Details     */
 /*******************/
 .split .area-1 {
-	height: 800000px;
-	background: center / contain no-repeat url("../images/code-syntax-highlighting-php-programming-wallpaper-preview.jpg")
+	height: 430px;
+	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/code-syntax-highlighting-php-programming-wallpaper-preview.jpg') center center no-repeat;
+	background-size: cover;
 }
 
 .split .area-2 {
