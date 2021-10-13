@@ -109,6 +109,15 @@
         <div class="container">
             <div class="row">
                 <h2 aria-label="Hi! Ich bin ein Developer">Hi! Ich bin <span class="typewriter"></span></h2>
+                <script>
+                    const date = new Date();
+                    const day = date.getDate()
+                    const month = date.getMonth() + 1
+                    const year = date.getFullYear();
+                    const age = year - 2004
+                    if(day < 29 && month <= 6) document.getElementById('age').textContent = age - 1
+                    else document.getElementById('age').textContent = age
+                </script>
                 <p>Momentan bin ich <a id="age"></a> alt und lebe in Frankfurt am Main. Ich habe 2019 angefangen zu programmieren. Anfangs war es nur HTML und CSS und im späteren Verlauf kam (Node)-JavaScript, Bootstrap, PHP und andere Dinge hinzu. Anschließend habe ich Interesse im Backend entwickelt und Discord Bots programmiert. In der Werner-von-Siemens-Schule habe ich einen tieferen Einblick in den Bereichen TA2-Datenbanken, objektorientierte Programmierung und Netzwerktechnik erhalten. Im einjährigen Praktikum habe ich auch Einblicke bei der Annahme von Störungsmeldungen und Beratungsanfragen übernommen, eine Fehleranalyse und dessen Behebung durchgeführt. Bei der Installation verschiedenster Betriebssysteme habe ich einen guten Einblick in Konfigurationen erhalten.</p>
             </div> <!-- end of row -->                   
         </div> <!-- end of container -->
@@ -183,7 +192,7 @@
                     <div class="text-box">
                         <i class="fas fa-code"></i>
                         <h4>itahriouan.dev <span class="badge badge-success">Online</span></h4>
-                        <p>Das ist eine Seite die ich anhand von HTML5, CSS3 und JavaScript bearbeitet habe.<a target="_blank" class="no-line" href="https://itahriouan.dev"><br><br><br>Mein Projekt</a></p>
+                        <p>Das ist eine Seite die ich anhand von HTML5, CSS3 und JavaScript bearbeitet habe.<a target="_blank" class="no-line" href="https://github.com/RayanItah/Website"><br><br><br>Mein Projekt</a></p>
                         <img src="images/details-icon-html.png" data-toggle="tooltip" data-placement="bottom" title="HTML5" alt="alternative" class="bildklasse">
                         <img src="images/details-icon-css.png" data-toggle="tooltip" data-placement="bottom" title="CSS3" alt="alternative" class="bildklasse">
                         <img src="images/details-icon-javascript.png" data-toggle="tooltip" data-placement="bottom" title="JavaScript" alt="alternative" class="bildklasse">
@@ -278,12 +287,6 @@
                 <div class="col-lg-12">
                     <div class="social-container">
                         <!--Instagram-->
-                        <span class="fa-stack">
-                            <a href="https://www.instagram.com/rayan.itr/">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
                         <!--GitHub-->
                         <span class="fa-stack">
                             <a href="https://github.com/RayanItah">
@@ -327,14 +330,5 @@
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <!-- Load Date Oriented Data -->
-    <script>
-        const date = new Date();
-        const day = date.getDate()
-        const month = date.getMonth() + 1
-        const year = date.getFullYear();
-        const age = year - 2004
-        if(day < 29 && month <= 6) document.getElementById('age').textContent = age - 1
-        else document.getElementById('age').textContent = age
-    </script>
 </body>
 </html>
